@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab task 1</title>
+    <link rel="stylesheet" href="firststyling.css">
+    <script src="./intial learning.js"></script>
+  </head>
+  <body>
+    <h3><u>Syeda Taleah Shah (FA16-BCS-271)</u></h3>
+    <h1>Javascript,Event Handling,Binding and DOM - Lab task 1</h1>
+
+    <div class="row">
+      <div class="column side left">
+        <h2>List of persons</h2>
+        <table class= "table" id="table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Age</th>
+              <th scope="col">City</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+      <div>
+        <div class="column side right">
+          <h2>Add/Update Person Form</h2>
+          <div id="form" style="border:1px solid black;padding:12px">
+                    
+            <br>Name: <input type="text" name="name" id="name" required><br><br>
+            
+            Gender: 
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br><br>
+            
+            Age: <input type="text" name="age" id="age" required><br><br>
+            
+            <label for="city">City: </label>
+            <select name="city" id="city">
+                <option value="Choose a city">Choose a city</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Peshawar">Peshawar</option>
+                <option value="Quetta">Quetta</option>
+                <option value="Muzaffarabad">Muzaffarabad</option>
+            </select><br><br>
+            
+            <input type="submit" class='btn btnAdd' name='add' id="add" onclick="add();" value="Add">
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
